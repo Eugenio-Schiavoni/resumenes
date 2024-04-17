@@ -168,5 +168,127 @@ Existen diversos tipos de emprendedores, como el visionario, el inversionista, e
 Algunos errores frecuentes incluyen no ajustar el producto a las necesidades del cliente, no definir un modelo de negocio claro, desconocer las propias fortalezas y debilidades, y carecer de formación adecuada antes de comenzar.
 
 Este enfoque integral sobre la empresa como sistema proporciona un marco robusto para entender su funcionamiento y gestión dentro del contexto más amplio de la economía y la sociedad.
- 
+
+En el contexto organizacional, es esencial considerar los diversos factores que impactan directamente a la empresa, categorizados como externos e internos:
+
+### Factores Externos
+1. **Primarios**: Son aquellos que tienen una influencia directa sobre la organización, pudiendo representar tanto oportunidades como amenazas. Incluyen:
+   - **Consumo**: Refiere a las tendencias y hábitos de compra de los consumidores.
+   - **Competencia**: Las acciones y estrategias de otras empresas en el mismo mercado.
+   - **Logística**: La gestión de la cadena de suministro que afecta la entrega y producción.
+   - **Potencial humano**: La disponibilidad y calidad de la fuerza laboral necesaria para la operación.
+
+2. **Secundarios**: Están conformados por el ambiente general que rodea a la organización, influenciado por eventos y manifestaciones en esferas como:
+   - **Política**: Decisiones gubernamentales y legislación.
+   - **Social**: Cambios en las normas y valores sociales.
+   - **Económicos**: Fluctuaciones en la economía más amplia.
+   - **Financieros**: Accesibilidad y costos del capital.
+   - **Tecnológicos**: Avances y cambios en la tecnología.
+
+### Factores Internos
+Estos factores son aquellos que la organización puede controlar en cierta medida y se relacionan con la interacción y gestión de los recursos y procesos internos. Incluyen:
+   - **Económico-financieros**: Capacidad de la empresa para generar recursos y gestionar sus finanzas.
+   - **Psicosociales**: Relaciones laborales, cultura organizacional y clima laboral.
+   - **Tecnológicos**: Implementación y aprovechamiento de la tecnología dentro de la empresa.
+   - **Administrativos**: Estructuras y procesos que soportan la gestión y operación de la empresa.
+
+
+
+ ## Guias
+1) Identifique y defina el objetivo del sistema. 
+
+Vender comida y ofrecer experiencia de musica
+
+2) Justifique con fundamento técnico (teórico) y argumentativo 
+(personal) si es un sistema Abierto o Cerrado.
+
+Un sistema abierto q interacciones con clientes, competencia, pais mediocre, etc.
+
+3) Identifique sus datos principales (rubro, industria, contexto, 
+propuesta de valor al mercado, target de usuarios/clientes). Luego 
+de ello realice un esquema identificando Suprasistema y 
+subsistema. 
+
+rubro: gastronomia
+industria: gastronomia
+contexto: es una empresa provincial con ganas de expandirse pero no le da la nafta
+propueta de valor: ofrecer comida rica y bandas q esten buenas
+gente media cheta con plata, pero que es media amarreta porque no es tan caro.
+
+4) Enuncie los elementos del ambiente o contexto del sistema.
+Pueden ser:
+Condiciones Económicas
+Regulaciones Gubernamentales
+Tendencias del Mercado
+Tecnología
+
+
+6) Defina los límites del sistema. 
+
+estructura organizacional, sus procesos operativos 
+y los recursos humanos y financieros
+
+
+7) Enumere cuáles son las entradas (inputs), procesos/alcances y 
+salidas de dicho sistema. (gráfico)
+
+![image](https://github.com/Eugenio-Schiavoni/resumenes/assets/164772198/3e8abd49-89ec-40e7-abb7-9c751fbf1a12)
+inputs: materia prima, personal humano, clientes y cosas
+procesos: preparar comida, servicio de entreenimiento etc
+output: platica, feedback del cliente, datos operativo.
+
+9) Explique brevemente cómo sería un ejemplo de “retroalimentación” 
+y tipo de relaciones que establece el sistema.
+
+El feedback del cliente sirve para mejorar los servicios que a su vez consume el cliente y que a su vez 
+
+11) Enuncie los recursos del sistema.
+
+
+1. cuál es la misión, visión y valores de la misma. 
+Ejemplifique cómo esas declaraciones se aplican en la realidad.
+
+mision: vender comidad de calidad, con bandas medianamente aceptables y cuadros de bb king y eric clapton (2 de cada uno minimo)
+vision: dar un servicio de vanguardia de gastronomia y shows en vivos.
+valores : que sea un ambiente familiar agradable con musica y buena comida y sin pegarle a los empleados (durante la semana)
+
+3. Analice cuáles son los factores externos primarios, factores externos 
+secundarios y factores internos que influyen en la organización.
+
+
+
+5. Clasifique la organización de estudio según el tipo de empresa 
+(tamaño, actividad, territorialidad, propiedad, personalidad jurídica).
+microemprend 1-9
+pequeña empr 10 - 50
+mediana 50 - 199
+grande +200
+
+tamaño: grande
+actividad: industrial
+territoraliedad : provincial
+propiedad: privada
+personalidad juridica : sociedad mercantil
+
+
+
+7. A partir de la propuesta de valor de la empresa o Core Business
+ejemplique la diferencia entre eficacia y eficiencia.
+
+eficaz es lograr el objetivo, centrado en el objetivo
+eficiencia es mejorar el proceso, optimizando uso de recursos.
+
+eficacia puede ser captar clientes de manera segura
+eficiencia puede estar relacionado a los tiempos en preparar un plato y optimizar tiempos de servicios. 
+
+9. Investigue en sus canales de comunicación el tipo de organigrama 
+que dispone la empresa, fundamente su respuesta de acuerdo con 
+argumento.
+
+                     CEO
+                      |
+            Gerente de   operaciones
+            |      |           |         |
+         RRHH - Marketing-  Finance- operativo
+   
 </div>
