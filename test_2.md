@@ -1,89 +1,105 @@
-Player:
-+ abstract startTurn()
-+ abstract throwDice()
-+ abstract doubleDice()
-+ abstract buildRanch()
-+ abstract sellRanch()
+# Game Structure
 
-RealPlayer:
-+ override startTurn()
-+ override everything above (to do)
-+ openOptionsMenu() [This would be where saving the game or exiting happens, suggestions for better method names are welcome]
+## Interfaces and Classes
 
-BotPlayer:
-+ override startTurn()
-+ override everything above (to do)
+### Player
+- **Abstract Methods:**
+  + `startTurn()`: Starts the player's turn.
+  + `throwDice()`: Simulates throwing dice.
+  + `doubleDice()`: Handles the scenario of throwing double on dice.
+  + `buildRanch()`: Allows building a ranch on properties.
+  + `sellRanch()`: Handles selling a ranch.
 
-Tile:
-+ abstract performAction(Player player)
+### RealPlayer (extends Player)
+- **Methods:**
+  + `startTurn()`: Implementation of starting the turn for a real player.
+  + `openOptionsMenu()`: Opens a menu with options such as save or exit.
 
-PropertyTile:
-+ override performAction(Player player)
-  + buyProperty(Player player)
-  + chargeTax(Player player)
+### BotPlayer (extends Player)
+- **Methods:**
+  + `startTurn()`: Implementation of starting the turn for a bot player.
 
-ServiceTile:
-+ override performAction(Player player)
-  + buyService(Player player)
-  + chargeTax(Player player)
+### Tile
+- **Abstract Method:**
+  + `performAction(Player player)`: Defines the action performed when a player lands on a tile.
 
-TrainTile:
-+ override performAction(Player player)
-  + buyProperty(Player player)
-  + chargeTax(Player player)
+### PropertyTile (extends Tile)
+- **Methods:**
+  + `buyProperty(Player player)`: Allows a player to buy the property.
+  + `chargeTax(Player player)`: Charges tax to the player.
 
-PrisonTile:
-+ override performAction(Player player) [This would be enterPrison()]
-+ payBail(Player player)
-+ boolean checkTurn(Player player)
-  + boolean verifyNumberTurns(Player player)
-  + boolean verifyDoubles(Player player)
-+ leavePrison()
+### ServiceTile (extends Tile)
+- **Methods:**
+  + `buyService(Player player)`: Allows a player to buy services.
+  + `chargeTax(Player player)`: Charges service tax to the player.
 
-StartTile:
-+ override performAction(Player player) [This would be detect if the player passed by start, because they don’t always land there]
+### TrainTile (extends Tile)
+- **Methods:**
+  + `buyProperty(Player player)`: Allows purchasing of train stations.
+  + `chargeTax(Player player)`: Charges tax related to train stations.
 
-ChanceTile:
-+ override performAction(Player player)
-  + drawCard(Card card)
-  + showCard(Card card)
-  + executeCard(Card card)
+### PrisonTile (extends Tile)
+- **Methods:**
+  + `enterPrison()`: Handles the player entering prison.
+  + `payBail(Player player)`: Allows a player to pay bail.
+  + `checkTurn(Player player)`: Checks conditions for a player's turn in prison.
+    - `verifyNumberTurns(Player player)`: Verifies the number of turns spent in prison.
+    - `verifyDoubles(Player player)`: Checks if the player throws doubles to leave prison.
+  + `leavePrison()`: Handles leaving the prison.
 
-Dice:
-+ int rollDice()
-+ String showResult()
+### StartTile (extends Tile)
+- **Method:**
+  + `detectPassStart(Player player)`: Detects if a player passes the start tile.
 
-GameAdmin:
-+ boolean saveGame(Board board)
-+ List<Player> generateHardDifficulty()
-+ List<Player> generateMediumDifficulty()
-+ List<Player> generateEasyDifficulty()
-+ Board loadGame(User user)
+### ChanceTile (extends Tile)
+- **Methods:**
+  + `drawCard(Card card)`: Draws a chance card.
+  + `showCard(Card card)`: Displays the drawn card.
+  + `executeCard(Card card)`: Executes the action specified on the chance card.
 
-Bank:
-+ void distributeMoney(List<Player> listPlayers)
-+ sellProperty(Tile tile, Player player)
-+ chargeTax(int amountToCharge, Player player)
-+ mortgagedProperty()
-+ sellFarms(Player player, PropertyTile tile)
+### Dice
+- **Methods:**
+  + `rollDice()`: Rolls the dice.
+  + `showResult()`: Shows the result of the dice roll.
 
-Login:
-+ boolean verifyUser()
+## Game Administration
 
-Board:
-+ void movePlayer(Player player, int numberOfTiles)
-+ setPlayer(Player player) [This function would be used when loading the game]
-+ shiftAssign()
+### GameAdmin
+- **Methods:**
+  + `saveGame(Board board)`: Saves the current state of the game.
+  + `generateDifficultyLevels()`: Generates players for different difficulty levels (Hard, Medium, Easy).
+  + `loadGame(User user)`: Loads a game for a user.
 
-Writing:
-+ boolean changeOwner(Player newOwner, Tile tile)
-+ boolean mortgage()
+### Bank
+- **Methods:**
+  + `distributeMoney(List<Player> listPlayers)`: Distributes starting money among players.
+  + `sellProperty(Tile tile, Player player)`: Handles the sale of a property.
+  + `chargeTax(int amountToCharge, Player player)`: Implements tax collection.
+  + `mortgagedProperty()`: Manages mortgaged properties.
+  + `sellFarms(Player player, PropertyTile tile)`: Handles the selling of farms.
 
-User:
-+ loadSavedGames()
+### Login
+- **Method:**
+  + `verifyUser()`: Verifies if a user is registered.
 
-Card:
-+ cardAction()
+### Board
+- **Methods:**
+  + `movePlayer(Player player, int numberOfTiles)`: Moves the player across the board.
+  + `setPlayer(Player player)`: Sets the player in the game upon loading.
 
-Register:
-+ registerNewUser()
+### Writing
+- **Methods:**
+  + `changeOwner(Player newOwner, Tile tile)`: Changes the owner of a tile.
+  + `mortgage()`: Handles mortgaging of properties.
+
+### User
+- **Method:**
+  + `loadSavedGames()`: Loads saved games for the user.
+
+### Card
+- **Method:**
+  + `cardAction()`: Defines actions for game cards.
+
+### Register
+- **Method:**
+  + `registerNewUser()`: Registers a new user.
